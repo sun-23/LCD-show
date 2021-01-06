@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=changeScreen
-Exec=/home/pi/ChangeScreen/changeScreen.py
-Icon=/home/pi/ChangeScreen/Icon.PNG
-Terminal=false
-Type=Application
