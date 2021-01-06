@@ -25,7 +25,7 @@ sudo echo "dtoverlay=mhs35:rotate=90" >> ./boot/config.txt.bak
 sudo echo "hdmi_group=2" >> ./boot/config.txt.bak
 sudo echo "hdmi_mode=1" >> ./boot/config.txt.bak
 sudo echo "hdmi_mode=87" >> ./boot/config.txt.bak
-sudo echo "hdmi_cvt 480 320 60 6 0 0 0" >> ./boot/config.txt.bak
+sudo echo "hdmi_cvt 600 400 60 6 0 0 0" >> ./boot/config.txt.bak
 sudo echo "hdmi_drive=2" >> ./boot/config.txt.bak
 sudo cp -rf ./boot/config.txt.bak /boot/config.txt
 
