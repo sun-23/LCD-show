@@ -97,7 +97,26 @@ sudo cp -rf ./.system_backup/.have_installed ./
 fi
 
 sudo sync
-sudo sync
+sudo sync 
+
+cp /boot/config.txt /boot/tmp.txt
+
+sed  -i "/hdmi_force_hotplug=1/d" /boot/tmp.txt
+sed  -i "/dtoverlay=vc4-fkms-v3d/d" /boot/tmp.txt
+sed  -i "/dtparam=i2c_arm=on/d" /boot/tmp.txt
+sed  -i "/dtparam=spi=on/d" /boot/tmp.txt
+sed  -i "/enable_uart=1/d" /boot/tmp.txt
+sed  -i "/dtoverlay=mhs35:rotate=90/d" /boot/tmp.txt
+sed  -i "/hdmi_group=2/d" /boot/tmp.txt
+sed  -i "/hdmi_mode=1/d" /boot/tmp.txt
+sed  -i "/hdmi_mode=87/d" /boot/tmp.txt
+sed  -i "/hdmi_cvt 600 400 60 6 0 0 0=/d" /boot/tmp.txt
+sed  -i "/hdmi_drive=2=/d" /boot/tmp.txt
+
+echo "dtoverlay=vc4-fkms-v3d" >> /boot/tmp.txt
+
+cp /boot/tmp.txt /boot/config.txt
+rm /boot/tmp.txt
 
 echo "The system has been restored"
 echo "now reboot"
