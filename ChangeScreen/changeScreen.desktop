@@ -2,5 +2,5 @@
 Name=changeScreen
 Exec=/home/pi/ChangeScreen/changeScreen.py
 Icon=/home/pi/ChangeScreen/Icon.PNG
-Terminal=false
+Terminal=true
 Type=Application
