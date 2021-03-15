@@ -10,8 +10,8 @@ https://github.com/lcdwiki/LCD-show-retropie
 ### change screen desktop app
 drag ChangeScreen to /home/pi(user) directory drag changeScreen.desktop to /home/pi(user)/Desktop directory
 and add to share application another user can use this app type 
- sudo su
- sudo cp -R /home/pi/Desktop/changeScreen.desktop /usr/share/applications/
+ ```sudo su```
+ ```sudo cp -R /home/pi/Desktop/changeScreen.desktop /usr/share/applications/```
 
 
 
